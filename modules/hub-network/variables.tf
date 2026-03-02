@@ -1,0 +1,37 @@
+variable "resource_group_name" {
+  type = string
+}
+
+variable "location" {
+  type = string
+}
+
+variable "vnet_name" {
+  type    = string
+  default = "project-network"
+}
+
+variable "vnet_address_space" {
+  type    = list(string)
+  default = ["10.0.0.0/16"]
+}
+
+variable "firewall_subnet_prefix" {
+  type    = string
+  default = "10.0.2.0/26"
+}
+
+variable "bastion_subnet_prefix" {
+  type    = string
+  default = "10.0.3.0/24"
+}
+
+variable "gateway_subnet_prefix" {
+  type    = string
+  default = "10.0.4.0/24"
+}
+
+variable "management_subnet_prefix" {
+  type    = string
+  default = "10.0.5.0/24"
+}
