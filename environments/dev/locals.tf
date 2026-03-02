@@ -1,6 +1,6 @@
 locals {
   location = "eastus"
-  
+
   default_tags = {
     Environment = "dev"
     Owner       = "austin"
